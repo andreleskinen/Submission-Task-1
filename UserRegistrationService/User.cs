@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationService;
 
+// en user class med properties för att spara mina värden i
 public class User
 {
-    public string Username { get; set; } = string.Empty;
-    public string Password { get; set; } = string.Empty;
-    public string Email { get; set; } = string.Empty;
+    public string Username { get; set; } 
+    public string Password { get; set; }
+    public string Email { get; set; } 
 
-
+    // en constructor för initialisera en ny användare
     public User(string username, string password, string email)
     {
         Username = username;
